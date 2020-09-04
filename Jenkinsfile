@@ -6,16 +6,15 @@ pipeline{
 
             stage('build') {
                 steps {
-                    bat 'npm install'
-                    bat './scripts/watch'
+                    node 'npm install'
                     dir('scripts'){
-                        bat 'watch'
+                        node 'watch'
                     }
                 }
             }
             stage('test') {
                 steps {
-                    bat 'CI=true npm test'
+                    node 'CI=true npm test'
                 }
             }
             
