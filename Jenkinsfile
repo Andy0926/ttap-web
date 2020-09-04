@@ -6,13 +6,13 @@ pipeline{
 
             stage('build') {
                 steps {
-                    bat 'npm install'
-                    bat 'start cmd.exe /c C:\\Users\\tanan\\.jenkins\\workspace\\TTAP-Multibranch_master\\scripts\\watch.bat'
+                    sh 'npm install'
+                    sh './scripts/watch'
                 }
             }
             stage('test') {
                 steps {
-                    bat 'npm run test'
+                    sh 'CI=true npm test'
                 }
             }
             
