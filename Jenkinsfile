@@ -6,7 +6,8 @@ pipeline{
 
             stage('build') {
                 steps {
-                    node 'npm install'
+                    bat 'npm install'
+                    bat 'start cmd.exe /c C:\Users\tanan\.jenkins\workspace\TTAP-Multibranch_master\scripts\watch'
                     dir('scripts'){
                         node 'watch'
                     }
@@ -14,7 +15,7 @@ pipeline{
             }
             stage('test') {
                 steps {
-                    node 'CI=true npm test'
+                    bat 'CI=true npm test'
                 }
             }
             
