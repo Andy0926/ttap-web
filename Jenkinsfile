@@ -1,23 +1,23 @@
 pipeline{
     agent{
-        label "node"
+        label "master"
     }
     stages {
             stage('cloneRepo') {
                 steps {
-                    node "git clone https://github.com/Andy0926/ttap-web.git"
+                    echo "git clone https://github.com/Andy0926/ttap-web.git"
                 }
             }
 
             stage('build') {
                 steps {
-                    node "npm install"
-                    node "./scripts/watch"
+                    echo "npm install"
+                    echo "./scripts/watch"
                 }
             }
             stage('test') {
                 steps {
-                    node "CI=true npm test"
+                    echo "CI=true npm test"
                 }
             }
             
