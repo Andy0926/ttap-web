@@ -12,7 +12,7 @@ pipeline{
             }
             stage('test') {
                 steps {
-                    bat 'CI=true npm test'
+                    bat 'npm run test'
                 }
             }
             
