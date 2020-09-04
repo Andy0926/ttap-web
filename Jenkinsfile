@@ -7,6 +7,7 @@ pipeline{
             stage('build') {
                 steps {
                     bat 'npm install'
+                    bat './scripts/watch'
                     dir('scripts'){
                         bat 'watch'
                     }
