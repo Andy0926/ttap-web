@@ -5,19 +5,19 @@ pipeline{
     stages {
             stage('cloneRepo') {
                 steps {
-                    echo "git clone https://github.com/Andy0926/ttap-web.git"
+                    bat git clone https://github.com/Andy0926/ttap-web.git
                 }
             }
 
             stage('build') {
                 steps {
-                    echo "npm install"
-                    echo "./scripts/watch"
+                    bat npm install
+                    bat ./scripts/watch
                 }
             }
             stage('test') {
                 steps {
-                    echo "CI=true npm test"
+                    bat CI=true npm test
                 }
             }
             
