@@ -7,11 +7,13 @@ pipeline{
             stage('build') {
                 steps {
                     bat 'npm install'
-                    bat './scripts/watch'
+                    bat 'cd scripts'
+                    bat 'watch'
                 }
             }
             stage('test') {
                 steps {
+                    cd '..'
                     bat 'CI=true npm test'
                 }
             }
