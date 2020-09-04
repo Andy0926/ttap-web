@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="503" failures="0" time="11.959">
+  <testsuite name="src\core\model\tests\_subjectSchema.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:26" time="1.455" tests="15">
+    <testcase classname="SubjectSchema constructor should set every bool property to false" name="SubjectSchema constructor should set every bool property to false" time="0.003">
+    </testcase>
+    <testcase classname="SubjectSchema constructor should set SubjectCode property based on the last parameter" name="SubjectSchema constructor should set SubjectCode property based on the last parameter" time="0">
+    </testcase>
+    <testcase classname="SubjectSchema IsEqual should return true if all properties are equal (1)" name="SubjectSchema IsEqual should return true if all properties are equal (1)" time="0">
+    </testcase>
+    <testcase classname="SubjectSchema IsEqual should return true if all properties are equal (2)" name="SubjectSchema IsEqual should return true if all properties are equal (2)" time="0">
+    </testcase>
+    <testcase classname="SubjectSchema IsEqual should return false if SubjectCode is not equal" name="SubjectSchema IsEqual should return false if SubjectCode is not equal" time="0">
+    </testcase>
+    <testcase classname="SubjectSchema IsEqual should return false if GotLecture is not equal" name="SubjectSchema IsEqual should return false if GotLecture is not equal" time="0.001">
+    </testcase>
+    <testcase classname="SubjectSchema IsEqual should return false if GotTutorial is not equal" name="SubjectSchema IsEqual should return false if GotTutorial is not equal" time="0">
+    </testcase>
+    <testcase classname="SubjectSchema IsEqual should return false if GotPractical is not equal" name="SubjectSchema IsEqual should return false if GotPractical is not equal" time="0">
+    </testcase>
+    <testcase classname="GenerateSubjectSchema should throw error if some slots are from different subjects" name="GenerateSubjectSchema should throw error if some slots are from different subjects" time="0.009">
+    </testcase>
+    <testcase classname="GenerateSubjectSchema case 1" name="GenerateSubjectSchema case 1" time="0.003">
+    </testcase>
+    <testcase classname="GenerateSubjectSchema case 2" name="GenerateSubjectSchema case 2" time="0.004">
+    </testcase>
+    <testcase classname="GenerateSubjectSchema case 3" name="GenerateSubjectSchema case 3" time="0.015">
+    </testcase>
+    <testcase classname="GetDiff should return empty array if schema X and schema Y are equal" name="GetDiff should return empty array if schema X and schema Y are equal" time="0.001">
+    </testcase>
+    <testcase classname="GetDiff should return error messages if schema X and schema Y are not equal (1)" name="GetDiff should return error messages if schema X and schema Y are not equal (1)" time="0">
+    </testcase>
+    <testcase classname="GetDiff should return error messages if schema X and schema Y are not equal (2)" name="GetDiff should return error messages if schema X and schema Y are not equal (2)" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\actions\saveTimetable\tests\_saveTimetableAsGoogleCalender.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:26" time="1.582" tests="15">
+    <testcase classname="SaveTimetableAsGoogleCalendar AddByWeek case 1" name="SaveTimetableAsGoogleCalendar AddByWeek case 1" time="0.003">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar AddByWeek case 2" name="SaveTimetableAsGoogleCalendar AddByWeek case 2" time="0.001">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar ToPureIsoString case 1" name="SaveTimetableAsGoogleCalendar ToPureIsoString case 1" time="0">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar ToPureIsoString case 2" name="SaveTimetableAsGoogleCalendar ToPureIsoString case 2" time="0">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar GetListOfDate case 1" name="SaveTimetableAsGoogleCalendar GetListOfDate case 1" time="0">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar GetListOfDate case 2" name="SaveTimetableAsGoogleCalendar GetListOfDate case 2" time="0">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar GetRecurrence case 1" name="SaveTimetableAsGoogleCalendar GetRecurrence case 1" time="0.001">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar GetRecurrence case 2" name="SaveTimetableAsGoogleCalendar GetRecurrence case 2" time="0">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar CreateEvent should not mutate semStartDate" name="SaveTimetableAsGoogleCalendar CreateEvent should not mutate semStartDate" time="0.004">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar CreateEvent case 1" name="SaveTimetableAsGoogleCalendar CreateEvent case 1" time="0.008">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar CreateEvent case 2" name="SaveTimetableAsGoogleCalendar CreateEvent case 2" time="0.002">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar GetMaxWeek case 1" name="SaveTimetableAsGoogleCalendar GetMaxWeek case 1" time="0.001">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar GetMaxWeek case 2" name="SaveTimetableAsGoogleCalendar GetMaxWeek case 2" time="0">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar GetWeekNumberHeaders should throw error if the passed in date is not a Monday" name="SaveTimetableAsGoogleCalendar GetWeekNumberHeaders should throw error if the passed in date is not a Monday" time="0.002">
+    </testcase>
+    <testcase classname="SaveTimetableAsGoogleCalendar GetWeekNumberHeaders case 1" name="SaveTimetableAsGoogleCalendar GetWeekNumberHeaders case 1" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\model\tests\_timetableSummary.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="2.841" tests="6">
+    <testcase classname="TimetableSummary constructor should have X SubjectSummaries if the passed in timetable have X subjects" name="TimetableSummary constructor should have X SubjectSummaries if the passed in timetable have X subjects" time="0.066">
+    </testcase>
+    <testcase classname="TimetableSummary ToString() case 1" name="TimetableSummary ToString() case 1" time="0.038">
+    </testcase>
+    <testcase classname="TimetableSummary case 1" name="TimetableSummary case 1" time="0.012">
+    </testcase>
+    <testcase classname="TimetableSummary case 2" name="TimetableSummary case 2" time="0.027">
+    </testcase>
+    <testcase classname="TimetableSummary case 3" name="TimetableSummary case 3" time="0.006">
+    </testcase>
+    <testcase classname="TimetableSummary test sort by scarcity" name="TimetableSummary test sort by scarcity" time="0.23">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_defilterTimetable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="2.877" tests="7">
+    <testcase classname="DefilterTimetable action &apos;s typename should be &apos;defilter timetable at [YX]&apos;" name="DefilterTimetable action &apos;s typename should be &apos;defilter timetable at [YX]&apos;" time="0.003">
+    </testcase>
+    <testcase classname="DefilterTimetable action should set property of FiltrateTimetables and ResidueTimetables " name="DefilterTimetable action should set property of FiltrateTimetables and ResidueTimetables " time="0.069">
+    </testcase>
+    <testcase classname="DefilterTimetable action should set property of TotalState based on the filtered timetables" name="DefilterTimetable action should set property of TotalState based on the filtered timetables" time="0.064">
+    </testcase>
+    <testcase classname="DefilterTimetable action should set property of UidsOfClickedState" name="DefilterTimetable action should set property of UidsOfClickedState" time="0.038">
+    </testcase>
+    <testcase classname="DefilterTimetable action should set property of ClickedTimeConstraint" name="DefilterTimetable action should set property of ClickedTimeConstraint" time="0.043">
+    </testcase>
+    <testcase classname="DefilterTimetable action should set property of CurrentIndex to 0" name="DefilterTimetable action should set property of CurrentIndex to 0" time="0.025">
+    </testcase>
+    <testcase classname="DefilterTimetable action case 1" name="DefilterTimetable action case 1" time="0.028">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\att\tests\_time.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:28" time="0.139" tests="56">
+    <testcase classname="time CreateTime24Hour case 1" name="time CreateTime24Hour case 1" time="0">
+    </testcase>
+    <testcase classname="time Test Equal() 1" name="time Test Equal() 1" time="0.001">
+    </testcase>
+    <testcase classname="time Test Equal() 2" name="time Test Equal() 2" time="0.002">
+    </testcase>
+    <testcase classname="time Test Equal() 3" name="time Test Equal() 3" time="0">
+    </testcase>
+    <testcase classname="time Test Equal() 4" name="time Test Equal() 4" time="0">
+    </testcase>
+    <testcase classname="time Test Equal() 5" name="time Test Equal() 5" time="0">
+    </testcase>
+    <testcase classname="time Test LessThan() 1" name="time Test LessThan() 1" time="0.001">
+    </testcase>
+    <testcase classname="time Test LessThan() 2" name="time Test LessThan() 2" time="0">
+    </testcase>
+    <testcase classname="time Test LessThan() 3" name="time Test LessThan() 3" time="0">
+    </testcase>
+    <testcase classname="time Test LessThan() 4" name="time Test LessThan() 4" time="0">
+    </testcase>
+    <testcase classname="time Test LessThan() 5" name="time Test LessThan() 5" time="0">
+    </testcase>
+    <testcase classname="time Test LessThan() 6" name="time Test LessThan() 6" time="0.001">
+    </testcase>
+    <testcase classname="time Test MoreThan() 1" name="time Test MoreThan() 1" time="0">
+    </testcase>
+    <testcase classname="time Test MoreThan() 2" name="time Test MoreThan() 2" time="0">
+    </testcase>
+    <testcase classname="time Test MoreThan() 3" name="time Test MoreThan() 3" time="0">
+    </testcase>
+    <testcase classname="time Test MoreThan() 4" name="time Test MoreThan() 4" time="0">
+    </testcase>
+    <testcase classname="time Test MoreThan() 5" name="time Test MoreThan() 5" time="0">
+    </testcase>
+    <testcase classname="time Test MoreThan() 6" name="time Test MoreThan() 6" time="0.001">
+    </testcase>
+    <testcase classname="time Test MoreThanOrEqual() 1" name="time Test MoreThanOrEqual() 1" time="0">
+    </testcase>
+    <testcase classname="time Test MoreThanOrEqual() 2" name="time Test MoreThanOrEqual() 2" time="0">
+    </testcase>
+    <testcase classname="time Test MoreThanOrEqual() 3" name="time Test MoreThanOrEqual() 3" time="0">
+    </testcase>
+    <testcase classname="time Test MoreThanOrEqual() 4" name="time Test MoreThanOrEqual() 4" time="0">
+    </testcase>
+    <testcase classname="time Test LessThanOrEqual() 1" name="time Test LessThanOrEqual() 1" time="0">
+    </testcase>
+    <testcase classname="time Test LessThanOrEqual() 2" name="time Test LessThanOrEqual() 2" time="0.001">
+    </testcase>
+    <testcase classname="time Test LessThanOrEqual() 3" name="time Test LessThanOrEqual() 3" time="0">
+    </testcase>
+    <testcase classname="time Test Factory() 1" name="time Test Factory() 1" time="0">
+    </testcase>
+    <testcase classname="time Test Factory() 2" name="time Test Factory() 2" time="0">
+    </testcase>
+    <testcase classname="time Test Factory() 3" name="time Test Factory() 3" time="0">
+    </testcase>
+    <testcase classname="time Test Parse() 1" name="time Test Parse() 1" time="0">
+    </testcase>
+    <testcase classname="time Test Parse() 2" name="time Test Parse() 2" time="0.001">
+    </testcase>
+    <testcase classname="time Test Parse() 3" name="time Test Parse() 3" time="0">
+    </testcase>
+    <testcase classname="time Test Parse() 4" name="time Test Parse() 4" time="0">
+    </testcase>
+    <testcase classname="time Test Parse() 5" name="time Test Parse() 5" time="0">
+    </testcase>
+    <testcase classname="time Test Minus() 1" name="time Test Minus() 1" time="0">
+    </testcase>
+    <testcase classname="time Test Minus() 2" name="time Test Minus() 2" time="0">
+    </testcase>
+    <testcase classname="time Test Minus() 3" name="time Test Minus() 3" time="0.001">
+    </testcase>
+    <testcase classname="time Test Minus() 4" name="time Test Minus() 4" time="0">
+    </testcase>
+    <testcase classname="time Test Minus() 5" name="time Test Minus() 5" time="0">
+    </testcase>
+    <testcase classname="time Test Add() 1" name="time Test Add() 1" time="0">
+    </testcase>
+    <testcase classname="time Test Add() 2" name="time Test Add() 2" time="0">
+    </testcase>
+    <testcase classname="time Test ToConstructionString() 1" name="time Test ToConstructionString() 1" time="0.001">
+    </testcase>
+    <testcase classname="time Test ToConstructionString() 2" name="time Test ToConstructionString() 2" time="0">
+    </testcase>
+    <testcase classname="time Test To12HourFormat() 1" name="time Test To12HourFormat() 1" time="0">
+    </testcase>
+    <testcase classname="time Test To12HourFormat() 2" name="time Test To12HourFormat() 2" time="0">
+    </testcase>
+    <testcase classname="time Test To12HourFormat() 3" name="time Test To12HourFormat() 3" time="0">
+    </testcase>
+    <testcase classname="time Test To12HourFormat() 4" name="time Test To12HourFormat() 4" time="0">
+    </testcase>
+    <testcase classname="time Test To12HourFormat() 5" name="time Test To12HourFormat() 5" time="0.001">
+    </testcase>
+    <testcase classname="time Test CreateTimeFrom12Hour() 1" name="time Test CreateTimeFrom12Hour() 1" time="0">
+    </testcase>
+    <testcase classname="time Test CreateTimeFrom12Hour() 2" name="time Test CreateTimeFrom12Hour() 2" time="0">
+    </testcase>
+    <testcase classname="time Test CreateTimeFrom12Hour() 3" name="time Test CreateTimeFrom12Hour() 3" time="0">
+    </testcase>
+    <testcase classname="time Test CreateTimeFrom12Hour_2() 1" name="time Test CreateTimeFrom12Hour_2() 1" time="0">
+    </testcase>
+    <testcase classname="time Test CreateTimeFrom12Hour_2() 2" name="time Test CreateTimeFrom12Hour_2() 2" time="0.001">
+    </testcase>
+    <testcase classname="time Test CreateTimeFrom12Hour_2() 3" name="time Test CreateTimeFrom12Hour_2() 3" time="0">
+    </testcase>
+    <testcase classname="time Test StringValue() 1" name="time Test StringValue() 1" time="0">
+    </testcase>
+    <testcase classname="time Test StringValue() 2" name="time Test StringValue() 2" time="0">
+    </testcase>
+    <testcase classname="time Test StringValue() 3" name="time Test StringValue() 3" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_findTimetablesBasedOnChosenSlots.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="3.155" tests="9">
+    <testcase classname="FindTimetablesBasedOnChosenSlots action &apos;s typename should be &apos;find timetables based on chosen slots&apos;" name="FindTimetablesBasedOnChosenSlots action &apos;s typename should be &apos;find timetables based on chosen slots&apos;" time="0.003">
+    </testcase>
+    <testcase classname="FindTimetablesBasedOnChosenSlots action should set property of FiltrateTimetables and ResidueTimetables if there are no error" name="FindTimetablesBasedOnChosenSlots action should set property of FiltrateTimetables and ResidueTimetables if there are no error" time="0.095">
+    </testcase>
+    <testcase classname="FindTimetablesBasedOnChosenSlots action should set ErrorMessages property of SlotsTableState if there are schema intolerance(1)" name="FindTimetablesBasedOnChosenSlots action should set ErrorMessages property of SlotsTableState if there are schema intolerance(1)" time="0.064">
+    </testcase>
+    <testcase classname="FindTimetablesBasedOnChosenSlots action should set ErrorMessages of SlotsTableState if there are schema intolerance(2)" name="FindTimetablesBasedOnChosenSlots action should set ErrorMessages of SlotsTableState if there are schema intolerance(2)" time="0.141">
+    </testcase>
+    <testcase classname="FindTimetablesBasedOnChosenSlots action should set ErrorMessages of SlotsTableState if there are schema intolerance(3)" name="FindTimetablesBasedOnChosenSlots action should set ErrorMessages of SlotsTableState if there are schema intolerance(3)" time="0.05">
+    </testcase>
+    <testcase classname="FindTimetablesBasedOnChosenSlots action should set ErrorMessages of SlotsTableState if no possible timetable is found even thought the schema is tolerated" name="FindTimetablesBasedOnChosenSlots action should set ErrorMessages of SlotsTableState if no possible timetable is found even thought the schema is tolerated" time="0.021">
+    </testcase>
+    <testcase classname="FindTimetablesBasedOnChosenSlots action should set IsOpen property of SlotTableState to false if there are no errors" name="FindTimetablesBasedOnChosenSlots action should set IsOpen property of SlotTableState to false if there are no errors" time="0.018">
+    </testcase>
+    <testcase classname="FindTimetablesBasedOnChosenSlots action should notify user about number of timetables found if there are no errors" name="FindTimetablesBasedOnChosenSlots action should notify user about number of timetables found if there are no errors" time="0.03">
+    </testcase>
+    <testcase classname="GetSlotsFromSlotNumbers case 1" name="GetSlotsFromSlotNumbers case 1" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\att\tests\_timePeriod.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:28" time="0.102" tests="30">
+    <testcase classname="constructor of TimePeriod should set TimePeriod.Min if startTime is less than TimePeriod.Min" name="constructor of TimePeriod should set TimePeriod.Min if startTime is less than TimePeriod.Min" time="0.001">
+    </testcase>
+    <testcase classname="constructor of TimePeriod should set TimePeriod.Max if endTime is more than TimePeriod.Max" name="constructor of TimePeriod should set TimePeriod.Max if endTime is more than TimePeriod.Max" time="0">
+    </testcase>
+    <testcase classname="constructor of TimePeriod should set TimePeriod.Max to be 1 more hour than endTime if endTime contains minutes" name="constructor of TimePeriod should set TimePeriod.Max to be 1 more hour than endTime if endTime contains minutes" time="0">
+    </testcase>
+    <testcase classname="constructor of TimePeriod should throw error when endTime is less than startTime" name="constructor of TimePeriod should throw error when endTime is less than startTime" time="0.001">
+    </testcase>
+    <testcase classname="time period Test Equal() 1" name="time period Test Equal() 1" time="0.001">
+    </testcase>
+    <testcase classname="time period Test Equal() 2" name="time period Test Equal() 2" time="0">
+    </testcase>
+    <testcase classname="time period Test Equal() 4" name="time period Test Equal() 4" time="0">
+    </testcase>
+    <testcase classname="time period Test Equal() 5" name="time period Test Equal() 5" time="0">
+    </testcase>
+    <testcase classname="time period Test Equal() 6" name="time period Test Equal() 6" time="0.001">
+    </testcase>
+    <testcase classname="time period Test GetDuplicate() 1" name="time period Test GetDuplicate() 1" time="0">
+    </testcase>
+    <testcase classname="time period Test GetDuplicate() 2" name="time period Test GetDuplicate() 2" time="0.004">
+    </testcase>
+    <testcase classname="time period Test Intersect() 1" name="time period Test Intersect() 1" time="0.001">
+    </testcase>
+    <testcase classname="time period Test Intersect() 2" name="time period Test Intersect() 2" time="0">
+    </testcase>
+    <testcase classname="time period Test Intersect() 3" name="time period Test Intersect() 3" time="0">
+    </testcase>
+    <testcase classname="time period Test Intersect() 4" name="time period Test Intersect() 4" time="0">
+    </testcase>
+    <testcase classname="time period Test Intersect() 5" name="time period Test Intersect() 5" time="0.001">
+    </testcase>
+    <testcase classname="time period Test Intersect() 6" name="time period Test Intersect() 6" time="0">
+    </testcase>
+    <testcase classname="time period Test Intersect() 7" name="time period Test Intersect() 7" time="0">
+    </testcase>
+    <testcase classname="time period Test Intersect() 8" name="time period Test Intersect() 8" time="0">
+    </testcase>
+    <testcase classname="time period Test Intersect() 9" name="time period Test Intersect() 9" time="0.001">
+    </testcase>
+    <testcase classname="time period Test Parse() 1" name="time period Test Parse() 1" time="0">
+    </testcase>
+    <testcase classname="time period Test Parse() 2" name="time period Test Parse() 2" time="0">
+    </testcase>
+    <testcase classname="time period Test BinaryData 1" name="time period Test BinaryData 1" time="0">
+    </testcase>
+    <testcase classname="time period Test BinaryData 2" name="time period Test BinaryData 2" time="0.001">
+    </testcase>
+    <testcase classname="time period Test BinaryData 3" name="time period Test BinaryData 3" time="0">
+    </testcase>
+    <testcase classname="time period GetStarTime case 1" name="time period GetStarTime case 1" time="0">
+    </testcase>
+    <testcase classname="time period GetStarTime case 2" name="time period GetStarTime case 2" time="0">
+    </testcase>
+    <testcase classname="time period GetStarTime case 3" name="time period GetStarTime case 3" time="0.001">
+    </testcase>
+    <testcase classname="time period GetEndTime case 1" name="time period GetEndTime case 1" time="0">
+    </testcase>
+    <testcase classname="time period GetEndTime case 2" name="time period GetEndTime case 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_generalizeSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:29" time="0.094" tests="10">
+    <testcase classname="GeneralizeSlot case 1" name="GeneralizeSlot case 1" time="0">
+    </testcase>
+    <testcase classname="GeneralizeSlot should not generalize slots if they are not CanBeGeneralize()" name="GeneralizeSlot should not generalize slots if they are not CanBeGeneralize()" time="0.001">
+    </testcase>
+    <testcase classname="GeneralizeSlot should not generalize slots that have relatives (case 1)" name="GeneralizeSlot should not generalize slots that have relatives (case 1)" time="0">
+    </testcase>
+    <testcase classname="GeneralizeSlot should not generalize slots that have relatives (case 2)" name="GeneralizeSlot should not generalize slots that have relatives (case 2)" time="0.001">
+    </testcase>
+    <testcase classname="GeneralizeSlot should not mutate the input" name="GeneralizeSlot should not mutate the input" time="0">
+    </testcase>
+    <testcase classname="CanBeGeneralize positive case 1" name="CanBeGeneralize positive case 1" time="0.001">
+    </testcase>
+    <testcase classname="CanBeGeneralize should return False if SubjectCode differs" name="CanBeGeneralize should return False if SubjectCode differs" time="0">
+    </testcase>
+    <testcase classname="CanBeGeneralize should return False if Type differs" name="CanBeGeneralize should return False if Type differs" time="0">
+    </testcase>
+    <testcase classname="CanBeGeneralize should return False if Day differs" name="CanBeGeneralize should return False if Day differs" time="0">
+    </testcase>
+    <testcase classname="CanBeGeneralize should return False if TimePeriod differs" name="CanBeGeneralize should return False if TimePeriod differs" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleSelectionOnGroupOfSlots.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:29" time="0.71" tests="5">
+    <testcase classname="ToggleSelectionOnGroupOfSlots action &apos;s typename should be &apos;toggle selection on group of slots of ... &apos;" name="ToggleSelectionOnGroupOfSlots action &apos;s typename should be &apos;toggle selection on group of slots of ... &apos;" time="0.001">
+    </testcase>
+    <testcase classname="ToggleSelectionOnGroupOfSlots action should set SlotStates property of SlotTables(1)" name="ToggleSelectionOnGroupOfSlots action should set SlotStates property of SlotTables(1)" time="0.246">
+    </testcase>
+    <testcase classname="ToggleSelectionOnGroupOfSlots action should set SlotStates property of SlotTables(2)" name="ToggleSelectionOnGroupOfSlots action should set SlotStates property of SlotTables(2)" time="0.186">
+    </testcase>
+    <testcase classname="ToggleSelectionOnGroupOfSlots action should set SubjectStates property of SlotTables(1)" name="ToggleSelectionOnGroupOfSlots action should set SubjectStates property of SlotTables(1)" time="0.117">
+    </testcase>
+    <testcase classname="ToggleSelectionOnGroupOfSlots action should set SubjectStates property of SlotTables(2)" name="ToggleSelectionOnGroupOfSlots action should set SubjectStates property of SlotTables(2)" time="0.088">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleSubjectSelection.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="4.048" tests="15">
+    <testcase classname="toggle subject selection action &apos;s type name should be &apos;select subject&apos;" name="toggle subject selection action &apos;s type name should be &apos;select subject&apos;" time="0.003">
+    </testcase>
+    <testcase classname="toggle subject selection action should toggle selection on a subject based on its subject index" name="toggle subject selection action should toggle selection on a subject based on its subject index" time="0.181">
+    </testcase>
+    <testcase classname="toggle subject selection action should toggle selection on subject from true to false also" name="toggle subject selection action should toggle selection on subject from true to false also" time="0.165">
+    </testcase>
+    <testcase classname="toggle subject selection action should show all subjects when user deselected all subjects" name="toggle subject selection action should show all subjects when user deselected all subjects" time="0.107">
+    </testcase>
+    <testcase classname="toggle subject selection action should set the property of timetable when selecting subject" name="toggle subject selection action should set the property of timetable when selecting subject" time="0.084">
+    </testcase>
+    <testcase classname="toggle subject selection action behaviour of subject selection case 1" name="toggle subject selection action behaviour of subject selection case 1" time="0.072">
+    </testcase>
+    <testcase classname="toggle subject selection action behaviour of subject selection case 2" name="toggle subject selection action behaviour of subject selection case 2" time="0.109">
+    </testcase>
+    <testcase classname="toggle subject selection action behaviour of subject deselection case 1" name="toggle subject selection action behaviour of subject deselection case 1" time="0.074">
+    </testcase>
+    <testcase classname="toggle subject selection action behaviour of subject deselection case 2" name="toggle subject selection action behaviour of subject deselection case 2" time="0.068">
+    </testcase>
+    <testcase classname="toggle subject selection action behaviour of subject deselection case 3" name="toggle subject selection action behaviour of subject deselection case 3" time="0.109">
+    </testcase>
+    <testcase classname="toggle subject selection action behaviour of subject deselection case 4" name="toggle subject selection action behaviour of subject deselection case 4" time="0.074">
+    </testcase>
+    <testcase classname="toggle subject selection action behaviour of subject deselection case 5" name="toggle subject selection action behaviour of subject deselection case 5" time="0.077">
+    </testcase>
+    <testcase classname="toggle subject selection action behaviour of subject deselection should set statistics of algorithmVisualizerState if algorithm visualizer is enabled" name="toggle subject selection action behaviour of subject deselection should set statistics of algorithmVisualizerState if algorithm visualizer is enabled" time="0.085">
+    </testcase>
+    <testcase classname="GetSelectedSlots should return a list of slots" name="GetSelectedSlots should return a list of slots" time="0">
+    </testcase>
+    <testcase classname="CheckForClashesBetween case 1" name="CheckForClashesBetween case 1" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\parser\tests\_parseRawSlotToSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:28" time="1.741" tests="6">
+    <testcase classname="parseRawSlotToSlot will manipulate TimePeriod.Min and TimePeriod.Max" name="parseRawSlotToSlot will manipulate TimePeriod.Min and TimePeriod.Max" time="0.014">
+    </testcase>
+    <testcase classname="parseRawSlotToSlot case 1" name="parseRawSlotToSlot case 1" time="0.011">
+    </testcase>
+    <testcase classname="parseRawSlotToSlot case 2" name="parseRawSlotToSlot case 2" time="1.156">
+    </testcase>
+    <testcase classname="parseRawSlotToSlot case 3" name="parseRawSlotToSlot case 3" time="0.452">
+    </testcase>
+    <testcase classname="IsParsable case 1" name="IsParsable case 1" time="0">
+    </testcase>
+    <testcase classname="IsReasonable should think that Industrial Training(IT) is not reasonable" name="IsReasonable should think that Industrial Training(IT) is not reasonable" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_bigSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:29" time="1.115" tests="5">
+    <testcase classname="BigSlot DayTimeMatrix should have length of 7 * 14 (case 1)" name="BigSlot DayTimeMatrix should have length of 7 * 14 (case 1)" time="0.006">
+    </testcase>
+    <testcase classname="BigSlot DayTimeMatrix should have length of 7 * 14 (case 2)" name="BigSlot DayTimeMatrix should have length of 7 * 14 (case 2)" time="0.001">
+    </testcase>
+    <testcase classname="BigSlot DayTimeMatrix should be array of number, where every 7 number represent matrix of a week" name="BigSlot DayTimeMatrix should be array of number, where every 7 number represent matrix of a week" time="0.002">
+    </testcase>
+    <testcase classname="BigSlot check for intersection 1" name="BigSlot check for intersection 1" time="0.001">
+    </testcase>
+    <testcase classname="BigSlot check for intersection 2" name="BigSlot check for intersection 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\specs\_integration.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:30" time="0.177" tests="1">
+    <testcase classname="Integration test case 1" name="Integration test case 1" time="0.082">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\tests\_parser.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:28" time="2.211" tests="8">
+    <testcase classname="Parser which is used to parse html into slots jiahau_2017_sept&apos;s last slot should have hash id of 202" name="Parser which is used to parse html into slots jiahau_2017_sept&apos;s last slot should have hash id of 202" time="0.298">
+    </testcase>
+    <testcase classname="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data should have 203 slots" name="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data should have 203 slots" time="0.178">
+    </testcase>
+    <testcase classname="Parser which is used to parse html into slots jiahau_2017_sept&apos;s last slot should have number of 129" name="Parser which is used to parse html into slots jiahau_2017_sept&apos;s last slot should have number of 129" time="0.111">
+    </testcase>
+    <testcase classname="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data should have 20 subjects" name="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data should have 20 subjects" time="0.109">
+    </testcase>
+    <testcase classname="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data first subject (sorted by name) should be Artificial Intelligence" name="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data first subject (sorted by name) should be Artificial Intelligence" time="0.097">
+    </testcase>
+    <testcase classname="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data first subject (sorted by name) should be TITAS" name="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data first subject (sorted by name) should be TITAS" time="0.113">
+    </testcase>
+    <testcase classname="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data subject Management Principles should contain 7 slots" name="Parser which is used to parse html into slots jiahau_2017_sept&apos;s data subject Management Principles should contain 7 slots" time="0.088">
+    </testcase>
+    <testcase classname="Parser which is used to parse html into slots keli_2017_sept&apos;s data : subject UKAI3013 shold have name of E-Commerce" name="Parser which is used to parse html into slots keli_2017_sept&apos;s data : subject UKAI3013 shold have name of E-Commerce" time="0.352">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\parser\tests\_parseStudentHtmlToRawSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:29" time="0.796" tests="1">
+    <testcase classname="ParseHtmlToRawSlot case 1" name="ParseHtmlToRawSlot case 1" time="0.703">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_selectSlotChoice.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:29" time="1.225" tests="2">
+    <testcase classname="SelectSlotChoice action &apos;s typename should be &apos;select slot choice&apos;" name="SelectSlotChoice action &apos;s typename should be &apos;select slot choice&apos;" time="0.001">
+    </testcase>
+    <testcase classname="SelectSlotChoice action case 1" name="SelectSlotChoice action case 1" time="1.138">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleSubjectListViewingOption.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:30" time="0.767" tests="5">
+    <testcase classname="ToggleSubjectListViewingOption the initial value of IsShowingSelectedSubject should be false" name="ToggleSubjectListViewingOption the initial value of IsShowingSelectedSubject should be false" time="0.231">
+    </testcase>
+    <testcase classname="ToggleSubjectListViewingOption should toggle property IsShowingSelectedSubjectOnly from false to true" name="ToggleSubjectListViewingOption should toggle property IsShowingSelectedSubjectOnly from false to true" time="0.147">
+    </testcase>
+    <testcase classname="ToggleSubjectListViewingOption should toggle property IsShowingSelectedSubjectOnly from true to false" name="ToggleSubjectListViewingOption should toggle property IsShowingSelectedSubjectOnly from true to false" time="0.117">
+    </testcase>
+    <testcase classname="ToggleSubjectListViewingOption should make selected subject visible and deselected subject invisible when first toggled" name="ToggleSubjectListViewingOption should make selected subject visible and deselected subject invisible when first toggled" time="0.099">
+    </testcase>
+    <testcase classname="ToggleSubjectListViewingOption should make all subjects visible when toggled again" name="ToggleSubjectListViewingOption should make all subjects visible when toggled again" time="0.121">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_findTimetable.benchmark.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:30" time="1.089" tests="1">
+    <testcase classname="FindTimetable using TinySlot case 1" name="FindTimetable using TinySlot case 1" time="1.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleSelectionOnSpecificSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:30" time="0.751" tests="4">
+    <testcase classname="toggle selection on specific slot &apos;s typename should be &apos;seleting slot [ 1 ]&apos; when passed in true" name="toggle selection on specific slot &apos;s typename should be &apos;seleting slot [ 1 ]&apos; when passed in true" time="0.265">
+    </testcase>
+    <testcase classname="toggle selection on specific slot &apos;s typename should be &apos;deseleting slot [ 1 ]&apos; when passed in false" name="toggle selection on specific slot &apos;s typename should be &apos;deseleting slot [ 1 ]&apos; when passed in false" time="0.121">
+    </testcase>
+    <testcase classname="toggle selection on specific slot should set property of SlotStates(1)" name="toggle selection on specific slot should set property of SlotStates(1)" time="0.108">
+    </testcase>
+    <testcase classname="toggle selection on specific slot should set property of SlotStates(2)" name="toggle selection on specific slot should set property of SlotStates(2)" time="0.12">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_notifyDataLoaded.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:30" time="0.642" tests="5">
+    <testcase classname="notifyDataLoaded action &apos;s name should be notify data loaded" name="notifyDataLoaded action &apos;s name should be notify data loaded" time="0">
+    </testcase>
+    <testcase classname="notifyDataLoaded action should change IsDataLoaded to true" name="notifyDataLoaded action should change IsDataLoaded to true" time="0.233">
+    </testcase>
+    <testcase classname="notifyDataLoaded action should set Subject property of SubjectListState" name="notifyDataLoaded action should set Subject property of SubjectListState" time="0.133">
+    </testcase>
+    <testcase classname="notifyDataLoaded action should set IsOpen of SubjectListView to true" name="notifyDataLoaded action should set IsOpen of SubjectListView to true" time="0.107">
+    </testcase>
+    <testcase classname="notifyDataLoaded action should initialize DataState" name="notifyDataLoaded action should initialize DataState" time="0.095">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\react\timetableView\tests\_generateSlotAndDayLayouts.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.178" tests="9">
+    <testcase classname="GenerateSlotLayouts case 1" name="GenerateSlotLayouts case 1" time="0.003">
+    </testcase>
+    <testcase classname="GenerateSlotLayouts case 2" name="GenerateSlotLayouts case 2" time="0.001">
+    </testcase>
+    <testcase classname="GenerateSlotLayouts case 3" name="GenerateSlotLayouts case 3" time="0.001">
+    </testcase>
+    <testcase classname="GetDayRows case 1" name="GetDayRows case 1" time="0.001">
+    </testcase>
+    <testcase classname="GetDayColumnLayouts case 1" name="GetDayColumnLayouts case 1" time="0">
+    </testcase>
+    <testcase classname="GetDayColumnLayouts case 2" name="GetDayColumnLayouts case 2" time="0.001">
+    </testcase>
+    <testcase classname="GetXandW() case 1" name="GetXandW() case 1" time="0.001">
+    </testcase>
+    <testcase classname="GetXandW() case 2" name="GetXandW() case 2" time="0">
+    </testcase>
+    <testcase classname="GetXandW() case 3" name="GetXandW() case 3" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_updateSlotsTableState.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.55" tests="6">
+    <testcase classname="UpdateSlotsTableState action &apos;s typename should be &apos;update slots table state&apos;" name="UpdateSlotsTableState action &apos;s typename should be &apos;update slots table state&apos;" time="0">
+    </testcase>
+    <testcase classname="UpdateSlotsTableState action should set SlotStates property of SlotTableState" name="UpdateSlotsTableState action should set SlotStates property of SlotTableState" time="0.21">
+    </testcase>
+    <testcase classname="UpdateSlotsTableState action should set SubjectStates property of SlotTableState" name="UpdateSlotsTableState action should set SubjectStates property of SlotTableState" time="0.141">
+    </testcase>
+    <testcase classname="UpdateSlotsTableState action should clear the error message property of SlotTableState" name="UpdateSlotsTableState action should clear the error message property of SlotTableState" time="0.113">
+    </testcase>
+    <testcase classname="GetSlotStates case 1" name="GetSlotStates case 1" time="0.001">
+    </testcase>
+    <testcase classname="GetSubjectStates case 1" name="GetSubjectStates case 1" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_turnOnSBCW.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.679" tests="5">
+    <testcase classname="Turn on SBCW &apos;s typename should be &apos;turn on search by considering week number&apos;" name="Turn on SBCW &apos;s typename should be &apos;turn on search by considering week number&apos;" time="0">
+    </testcase>
+    <testcase classname="Turn on SBCW should set SearchByConsideringWeekNumber to true " name="Turn on SBCW should set SearchByConsideringWeekNumber to true " time="0.219">
+    </testcase>
+    <testcase classname="Turn on SBCW should set TimetableFinder to FindTimetableByConsideringWeekNumber" name="Turn on SBCW should set TimetableFinder to FindTimetableByConsideringWeekNumber" time="0.145">
+    </testcase>
+    <testcase classname="Turn on SBCW should set IsOpen of SBCWDialog to false" name="Turn on SBCW should set IsOpen of SBCWDialog to false" time="0.104">
+    </testcase>
+    <testcase classname="Turn on SBCW should set RawSlotDataRouter to route from &apos;ungeneralized&apos; slot" name="Turn on SBCW should set RawSlotDataRouter to route from &apos;ungeneralized&apos; slot" time="0.091">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_findTimetable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="6.056" tests="12">
+    <testcase classname="FindTimetable() should throw error if passed in empty array" name="FindTimetable() should throw error if passed in empty array" time="0.003">
+    </testcase>
+    <testcase classname="FindTimetable() case 1" name="FindTimetable() case 1" time="0.027">
+    </testcase>
+    <testcase classname="FindTimetable() case 2" name="FindTimetable() case 2" time="0.037">
+    </testcase>
+    <testcase classname="FindTimetable() case 3" name="FindTimetable() case 3" time="0.019">
+    </testcase>
+    <testcase classname="FindTimetable() case 4" name="FindTimetable() case 4" time="0.044">
+    </testcase>
+    <testcase classname="FindTimetable() case 5" name="FindTimetable() case 5" time="0.054">
+    </testcase>
+    <testcase classname="FindTimetable() case 6" name="FindTimetable() case 6" time="0.073">
+    </testcase>
+    <testcase classname="FindTimetable() case 7" name="FindTimetable() case 7" time="0.012">
+    </testcase>
+    <testcase classname="FindTimetable() case 8" name="FindTimetable() case 8" time="0.009">
+    </testcase>
+    <testcase classname="FindTimetable() should return empty array when there is no possible timetable" name="FindTimetable() should return empty array when there is no possible timetable" time="0.017">
+    </testcase>
+    <testcase classname="FindTimetable() case 1 on Timetable.DayTimeMatrix" name="FindTimetable() case 1 on Timetable.DayTimeMatrix" time="0.005">
+    </testcase>
+    <testcase classname="FindTimetableByConsideringWeekNumber  case 1" name="FindTimetableByConsideringWeekNumber  case 1" time="3.308">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\actions\saveTimetable\tests\_saveTimetable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.463" tests="2">
+    <testcase classname="SaveTimetable action should set IsMainDialogOpen property to false" name="SaveTimetable action should set IsMainDialogOpen property to false" time="0.081">
+    </testcase>
+    <testcase classname="SaveTimetable action should set IsGetDateDialogOpen property to false" name="SaveTimetable action should set IsGetDateDialogOpen property to false" time="0.235">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\util\tests\_colorhash.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:28" time="3.235" tests="2">
+    <testcase classname="customHash() customHashFunction should generate unique integer for every subject code" name="customHash() customHashFunction should generate unique integer for every subject code" time="0.003">
+    </testcase>
+    <testcase classname="customHash() ColorHash should generate unique rgb for every subject code" name="customHash() ColorHash should generate unique rgb for every subject code" time="3.071">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_turnOffSBCW.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.558" tests="4">
+    <testcase classname="TurnOffSBCW action &apos;s typename should be &apos;turn off search by considering week number&apos;" name="TurnOffSBCW action &apos;s typename should be &apos;turn off search by considering week number&apos;" time="0">
+    </testcase>
+    <testcase classname="TurnOffSBCW action should set SearchByConsideringWeekNumber to false " name="TurnOffSBCW action should set SearchByConsideringWeekNumber to false " time="0.214">
+    </testcase>
+    <testcase classname="TurnOffSBCW action should set TimetableFinder to FindTimetableByConsideringWeekNumber" name="TurnOffSBCW action should set TimetableFinder to FindTimetableByConsideringWeekNumber" time="0.138">
+    </testcase>
+    <testcase classname="TurnOffSBCW action should set RawSlotDataRouter to route from &apos;generalized&apos; slot" name="TurnOffSBCW action should set RawSlotDataRouter to route from &apos;generalized&apos; slot" time="0.106">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\tests\_testManager.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.648" tests="1">
+    <testcase classname="TestManager functions GetFileNameOf should return string based on FileName enum" name="TestManager functions GetFileNameOf should return string based on FileName enum" time="0.613">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\model\matrix\tests\_generateTotalMatrix.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.226" tests="6">
+    <testcase classname="GenerateTotalMatrix case 1" name="GenerateTotalMatrix case 1" time="0.034">
+    </testcase>
+    <testcase classname="GenerateTotalMatrix GetDefinitelyOccupiedMatrix() case 1" name="GenerateTotalMatrix GetDefinitelyOccupiedMatrix() case 1" time="0.03">
+    </testcase>
+    <testcase classname="GenerateTotalMatrix GetDefinitelyUnoccupiedMatrix() case 1" name="GenerateTotalMatrix GetDefinitelyUnoccupiedMatrix() case 1" time="0.022">
+    </testcase>
+    <testcase classname="GenerateTotalMatrix GetMaybeOccupiedMatrix() case 1" name="GenerateTotalMatrix GetMaybeOccupiedMatrix() case 1" time="0.017">
+    </testcase>
+    <testcase classname="GenerateTotalMatrix StringifyTotalMatrix case 1" name="GenerateTotalMatrix StringifyTotalMatrix case 1" time="0.015">
+    </testcase>
+    <testcase classname="GenerateTotalMatrix StringifyTotalMatrix case when some uidsOfClickedMatrix is passed in" name="GenerateTotalMatrix StringifyTotalMatrix case when some uidsOfClickedMatrix is passed in" time="0.017">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_filterTimetable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.249" tests="7">
+    <testcase classname="FilterTimetable action &apos;s typename should be &apos;filter timetable at [YX]&apos;" name="FilterTimetable action &apos;s typename should be &apos;filter timetable at [YX]&apos;" time="0.001">
+    </testcase>
+    <testcase classname="FilterTimetable action should set property of TimetableListState.FiltrateTimetables and TimetableListState.ResidueTimetables " name="FilterTimetable action should set property of TimetableListState.FiltrateTimetables and TimetableListState.ResidueTimetables " time="0.042">
+    </testcase>
+    <testcase classname="FilterTimetable action the resulting TimetableListState.FiltrateTimetables and TimetableListState.ResidueTimetables should equal to the original list of timetables when they concated" name="FilterTimetable action the resulting TimetableListState.FiltrateTimetables and TimetableListState.ResidueTimetables should equal to the original list of timetables when they concated" time="0.032">
+    </testcase>
+    <testcase classname="FilterTimetable action should set property of SetTimeConstraintState.TotalState based on the filtered timetables" name="FilterTimetable action should set property of SetTimeConstraintState.TotalState based on the filtered timetables" time="0.028">
+    </testcase>
+    <testcase classname="FilterTimetable action should set property of SetTimeConstraintState.UidsOfClickedState" name="FilterTimetable action should set property of SetTimeConstraintState.UidsOfClickedState" time="0.018">
+    </testcase>
+    <testcase classname="FilterTimetable action should set property of SetTimeConstraintState.ClickedTimeConstraint" name="FilterTimetable action should set property of SetTimeConstraintState.ClickedTimeConstraint" time="0.018">
+    </testcase>
+    <testcase classname="FilterTimetable action should set property of CurrentIndex to 0" name="FilterTimetable action should set property of CurrentIndex to 0" time="0.019">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_goToRandomTimetable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.111" tests="7">
+    <testcase classname="goToNextTimetable action &apos;s name shold be &apos;go to next timetable&apos;" name="goToNextTimetable action &apos;s name shold be &apos;go to next timetable&apos;" time="0">
+    </testcase>
+    <testcase classname="goToNextTimetable action should increment the CurrentIndex and reset the SubCurrentIndex" name="goToNextTimetable action should increment the CurrentIndex and reset the SubCurrentIndex" time="0.002">
+    </testcase>
+    <testcase classname="goToNextTimetable action should increment the current index cyclically" name="goToNextTimetable action should increment the current index cyclically" time="0.001">
+    </testcase>
+    <testcase classname="GoToRandomTimetable action &apos;s typename should be &apos;go to random timetable&apos;" name="GoToRandomTimetable action &apos;s typename should be &apos;go to random timetable&apos;" time="0.001">
+    </testcase>
+    <testcase classname="GoToRandomTimetable action should set the TimetableListState.CurrentIndex property to a random value and reset the CurrentSubIndex" name="GoToRandomTimetable action should set the TimetableListState.CurrentIndex property to a random value and reset the CurrentSubIndex" time="0.002">
+    </testcase>
+    <testcase classname="GoToRandomTimetable action should set the TimetableListState.CurrentIndex to a value that is different from previous TimetableListState.CurrentIndex" name="GoToRandomTimetable action should set the TimetableListState.CurrentIndex to a value that is different from previous TimetableListState.CurrentIndex" time="0.001">
+    </testcase>
+    <testcase classname="GoToRandomTimetable action should not loop infinitely when there is only one timetable" name="GoToRandomTimetable action should not loop infinitely when there is only one timetable" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\actions\saveTimetable\tests\_saveTimetableAsTextFile.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.19" tests="2">
+    <testcase classname="SaveTimetableAsTextFile action &apos;s typename should be &apos;save timetable as - text file&apos;" name="SaveTimetableAsTextFile action &apos;s typename should be &apos;save timetable as - text file&apos;" time="0">
+    </testcase>
+    <testcase classname="findSisterSlots case 1" name="findSisterSlots case 1" time="0.056">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\react\panels\tests\_leftRightPanel.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.219" tests="2">
+    <testcase classname="&lt;LeftRightPanel/&gt; should throw error if it does not receive 2 children" name="&lt;LeftRightPanel/&gt; should throw error if it does not receive 2 children" time="0.019">
+    </testcase>
+    <testcase classname="&lt;LeftRightPanel/&gt; should render a table of 1 row and 2 column" name="&lt;LeftRightPanel/&gt; should render a table of 1 row and 2 column" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\react\tests\_timetableSummaryView.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.226" tests="1">
+    <testcase classname="&lt;TimetableSummaryView/&gt; should render without error" name="&lt;TimetableSummaryView/&gt; should render without error" time="0.049">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_findTimetableWithBigSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.259" tests="10">
+    <testcase classname="FindTimetable() with BigSlot case 1" name="FindTimetable() with BigSlot case 1" time="0.005">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot case 2" name="FindTimetable() with BigSlot case 2" time="0.007">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot case 3" name="FindTimetable() with BigSlot case 3" time="0.005">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot case 4" name="FindTimetable() with BigSlot case 4" time="0.027">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot case 5" name="FindTimetable() with BigSlot case 5" time="0.06">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot case 6" name="FindTimetable() with BigSlot case 6" time="0.059">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot case 7" name="FindTimetable() with BigSlot case 7" time="0.002">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot case 8" name="FindTimetable() with BigSlot case 8" time="0.011">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot should return empty array when there is no possible timetable" name="FindTimetable() with BigSlot should return empty array when there is no possible timetable" time="0.004">
+    </testcase>
+    <testcase classname="FindTimetable() with BigSlot case 1 on Timetable.DayTimeMatrix" name="FindTimetable() with BigSlot case 1 on Timetable.DayTimeMatrix" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_searchSubjectList.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.121" tests="7">
+    <testcase classname="searchSubjectList action should render all subject to be visible if searched text is empty" name="searchSubjectList action should render all subject to be visible if searched text is empty" time="0.004">
+    </testcase>
+    <testcase classname="searchSubjectList action should make some subject invisible based on if the searched text match only some subejcts" name="searchSubjectList action should make some subject invisible based on if the searched text match only some subejcts" time="0.003">
+    </testcase>
+    <testcase classname="searchSubjectList action should allow searching using uppercase letter" name="searchSubjectList action should allow searching using uppercase letter" time="0.003">
+    </testcase>
+    <testcase classname="searchSubjectList action should toggle IsShowSelectedSubjectsOnly to false when dispatched" name="searchSubjectList action should toggle IsShowSelectedSubjectsOnly to false when dispatched" time="0.003">
+    </testcase>
+    <testcase classname="searchSubjectList action should make all subject visible when the searched string is empty again" name="searchSubjectList action should make all subject visible when the searched string is empty again" time="0.004">
+    </testcase>
+    <testcase classname="searchSubjectList action should set the SearchedText based on input" name="searchSubjectList action should set the SearchedText based on input" time="0.002">
+    </testcase>
+    <testcase classname="searchSubjectList action should allow user to search using subjects initial" name="searchSubjectList action should allow user to search using subjects initial" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\clashFinder\_findClashes.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.103" tests="6">
+    <testcase classname="FindClashes() should throw error when input length is less than 2" name="FindClashes() should throw error when input length is less than 2" time="0.003">
+    </testcase>
+    <testcase classname="FindClashes() should mutate the input&apos;s ClasingCounterpart property only" name="FindClashes() should mutate the input&apos;s ClasingCounterpart property only" time="0.004">
+    </testcase>
+    <testcase classname="FindClashes() should not duplicate clashing counterparts" name="FindClashes() should not duplicate clashing counterparts" time="0.003">
+    </testcase>
+    <testcase classname="FindClashes() case 1" name="FindClashes() case 1" time="0.004">
+    </testcase>
+    <testcase classname="FindClashes() case 2" name="FindClashes() case 2" time="0.005">
+    </testcase>
+    <testcase classname="FindClashes() case 3" name="FindClashes() case 3" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_updateTotalMatrix.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.189" tests="4">
+    <testcase classname="UpdateTotalState action &apos;s typename should be &apos;update total state&apos;" name="UpdateTotalState action &apos;s typename should be &apos;update total state&apos;" time="0.001">
+    </testcase>
+    <testcase classname="UpdateTotalState action should set the TotalState property" name="UpdateTotalState action should set the TotalState property" time="0.037">
+    </testcase>
+    <testcase classname="UpdateTotalState action should clear UidsOfClickedState" name="UpdateTotalState action should clear UidsOfClickedState" time="0.033">
+    </testcase>
+    <testcase classname="UpdateTotalState action should reset ClickedTimeConstraint" name="UpdateTotalState action should reset ClickedTimeConstraint" time="0.026">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_notifyIfTimetableIsFound.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:31" time="0.441" tests="3">
+    <testcase classname="NotifyIfTimetableIsFound action &apos;s typename should be &apos;notify if timetable is found&apos;" name="NotifyIfTimetableIsFound action &apos;s typename should be &apos;notify if timetable is found&apos;" time="0">
+    </testcase>
+    <testcase classname="NotifyIfTimetableIsFound action should set IsSnackBarVisible to true if some subjects is selected" name="NotifyIfTimetableIsFound action should set IsSnackBarVisible to true if some subjects is selected" time="0.303">
+    </testcase>
+    <testcase classname="NotifyIfTimetableIsFound action should set IsSnackBarVisible to false if zero subject is selected" name="NotifyIfTimetableIsFound action should set IsSnackBarVisible to false if zero subject is selected" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_partitionize.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.094" tests="8">
+    <testcase classname="Partitionize case 1" name="Partitionize case 1" time="0.001">
+    </testcase>
+    <testcase classname="Partitionize case 2" name="Partitionize case 2" time="0.001">
+    </testcase>
+    <testcase classname="Partitionize case 3" name="Partitionize case 3" time="0">
+    </testcase>
+    <testcase classname="Partitionize case 4" name="Partitionize case 4" time="0">
+    </testcase>
+    <testcase classname="Partitionize case 5" name="Partitionize case 5" time="0.001">
+    </testcase>
+    <testcase classname="Partitionize case 6" name="Partitionize case 6" time="0">
+    </testcase>
+    <testcase classname="PartitionizeByKey case 1" name="PartitionizeByKey case 1" time="0.001">
+    </testcase>
+    <testcase classname="PartitionizeByKey case 2" name="PartitionizeByKey case 2" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\model\matrix\tests\_filter.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.117" tests="4">
+    <testcase classname="Filter() should throw error if box kind is not MaybeOccupied" name="Filter() should throw error if box kind is not MaybeOccupied" time="0.002">
+    </testcase>
+    <testcase classname="Filter() should return a tuple : [filtrate, residue]" name="Filter() should return a tuple : [filtrate, residue]" time="0">
+    </testcase>
+    <testcase classname="Filter() case 1" name="Filter() case 1" time="0">
+    </testcase>
+    <testcase classname="Filter() case 2" name="Filter() case 2" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\react\colors\tests\_generateColorScheme.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.102" tests="4">
+    <testcase classname="GenerateColorScheme() should return X ColorSchemes if they are X distinct subjects" name="GenerateColorScheme() should return X ColorSchemes if they are X distinct subjects" time="0.001">
+    </testcase>
+    <testcase classname="GenerateColorScheme() should generate the same set of color schemes regardless of the order of the slots" name="GenerateColorScheme() should generate the same set of color schemes regardless of the order of the slots" time="0.001">
+    </testcase>
+    <testcase classname="GenerateColorScheme() should not throw errors when there is only 1 subjects passed in" name="GenerateColorScheme() should not throw errors when there is only 1 subjects passed in" time="0.002">
+    </testcase>
+    <testcase classname="GenerateColorScheme() should not throw errors even when the number of selected subject exceeds the number of chosen colors" name="GenerateColorScheme() should not throw errors even when the number of selected subject exceeds the number of chosen colors" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\model\matrix\tests\_defilter.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.101" tests="5">
+    <testcase classname="Defilter() should throw error if clickedTimeConstraint.length is not 7" name="Defilter() should throw error if clickedTimeConstraint.length is not 7" time="0">
+    </testcase>
+    <testcase classname="Defilter() should not throw error if clickedTimeConstraint.length is 7" name="Defilter() should not throw error if clickedTimeConstraint.length is 7" time="0.001">
+    </testcase>
+    <testcase classname="Defilter() should return a tuple : [rescuedTimetables, unrescuedTimetables]" name="Defilter() should return a tuple : [rescuedTimetables, unrescuedTimetables]" time="0">
+    </testcase>
+    <testcase classname="Defilter() case 1" name="Defilter() case 1" time="0.001">
+    </testcase>
+    <testcase classname="Defilter() case 2" name="Defilter() case 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\parser\tests\_parseSlotToTinySlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.071" tests="4">
+    <testcase classname="ParseSlotToTinySlot should join slots into same group if they have the same SlotNumber" name="ParseSlotToTinySlot should join slots into same group if they have the same SlotNumber" time="0">
+    </testcase>
+    <testcase classname="ParseSlotToTinySlot should separate slots into different group if they have different SlotNumber" name="ParseSlotToTinySlot should separate slots into different group if they have different SlotNumber" time="0.001">
+    </testcase>
+    <testcase classname="ParseSlotToTinySlot should collect Uid of slots from the same group" name="ParseSlotToTinySlot should collect Uid of slots from the same group" time="0.001">
+    </testcase>
+    <testcase classname="ParseSlotToTinySlot should join timeperiod into a matrix for slots from the same group" name="ParseSlotToTinySlot should join timeperiod into a matrix for slots from the same group" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\att\tests\_week.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.062" tests="12">
+    <testcase classname="week Test IntersectWith 1" name="week Test IntersectWith 1" time="0">
+    </testcase>
+    <testcase classname="week Test IntersectWith 2" name="week Test IntersectWith 2" time="0.001">
+    </testcase>
+    <testcase classname="week Test IntersectWith 3" name="week Test IntersectWith 3" time="0">
+    </testcase>
+    <testcase classname="week Test IntersectWith 4" name="week Test IntersectWith 4" time="0">
+    </testcase>
+    <testcase classname="week Test IntersectWith 5" name="week Test IntersectWith 5" time="0">
+    </testcase>
+    <testcase classname="week Test Parse 1" name="week Test Parse 1" time="0.001">
+    </testcase>
+    <testcase classname="week Test Parse 2" name="week Test Parse 2" time="0.001">
+    </testcase>
+    <testcase classname="week Test Parse 3" name="week Test Parse 3" time="0">
+    </testcase>
+    <testcase classname="week Test Parse 4" name="week Test Parse 4" time="0">
+    </testcase>
+    <testcase classname="week Test Parse 5" name="week Test Parse 5" time="0">
+    </testcase>
+    <testcase classname="week BinaryData case 1" name="week BinaryData case 1" time="0.001">
+    </testcase>
+    <testcase classname="week BinaryData case 2" name="week BinaryData case 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\util\tests\str.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.057" tests="11">
+    <testcase classname="Str constructor should receive a string as parameter" name="Str constructor should receive a string as parameter" time="0">
+    </testcase>
+    <testcase classname="Str Contains case 1" name="Str Contains case 1" time="0.001">
+    </testcase>
+    <testcase classname="Str Contains should be case sensitive" name="Str Contains should be case sensitive" time="0">
+    </testcase>
+    <testcase classname="Str Capitalize should capitalize every word in a string" name="Str Capitalize should capitalize every word in a string" time="0">
+    </testcase>
+    <testcase classname="Str Capitalize case 2" name="Str Capitalize case 2" time="0.001">
+    </testcase>
+    <testcase classname="Str IsAlphaNumeric case 1" name="Str IsAlphaNumeric case 1" time="0">
+    </testcase>
+    <testcase classname="Str IsAlphaNumeric case 2" name="Str IsAlphaNumeric case 2" time="0">
+    </testcase>
+    <testcase classname="Str ReplaceAll case 1" name="Str ReplaceAll case 1" time="0.001">
+    </testcase>
+    <testcase classname="Str ReplaceAll case 2" name="Str ReplaceAll case 2" time="0">
+    </testcase>
+    <testcase classname="Str Count case 1" name="Str Count case 1" time="0">
+    </testcase>
+    <testcase classname="Str Count case 2" name="Str Count case 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\parser\tests\_parseRawSlotToSubject.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.086" tests="3">
+    <testcase classname="parseRawSlotToSubject should set the SlotNumber property of each subject without duplication" name="parseRawSlotToSubject should set the SlotNumber property of each subject without duplication" time="0.002">
+    </testcase>
+    <testcase classname="parseRawSlotToSubject should exclude slots that are not reasonable" name="parseRawSlotToSubject should exclude slots that are not reasonable" time="0.004">
+    </testcase>
+    <testcase classname="parseRawSlotToSubject should exclude slots that are not parsable" name="parseRawSlotToSubject should exclude slots that are not parsable" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\tests\_testDataGenerator.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.142" tests="2">
+    <testcase classname="testDataGenerator GetTestTimetables1  should return 29 timetables" name="testDataGenerator GetTestTimetables1  should return 29 timetables" time="0.036">
+    </testcase>
+    <testcase classname="testDataGenerator Name of the group case 1" name="testDataGenerator Name of the group case 1" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_notifyNumberOfRemainingTimetables.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.143" tests="3">
+    <testcase classname="NotifyNumberOfRemainingTimetables action &apos;s typename should be &apos;notify number of remaining timetables&apos;" name="NotifyNumberOfRemainingTimetables action &apos;s typename should be &apos;notify number of remaining timetables&apos;" time="0">
+    </testcase>
+    <testcase classname="NotifyNumberOfRemainingTimetables action should set IsSnackbarVisible to true" name="NotifyNumberOfRemainingTimetables action should set IsSnackbarVisible to true" time="0.041">
+    </testcase>
+    <testcase classname="NotifyNumberOfRemainingTimetables action should set SnackbarMessage" name="NotifyNumberOfRemainingTimetables action should set SnackbarMessage" time="0.028">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\att\tests\_timeSpan.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.068" tests="15">
+    <testcase classname="timespan constructor should throw error if hours less than 0" name="timespan constructor should throw error if hours less than 0" time="0.001">
+    </testcase>
+    <testcase classname="timespan constructor should throw error if minutes less than 0" name="timespan constructor should throw error if minutes less than 0" time="0">
+    </testcase>
+    <testcase classname="timespan constructor should throw error if seconds less than 0" name="timespan constructor should throw error if seconds less than 0" time="0">
+    </testcase>
+    <testcase classname="timespan constructor case 1" name="timespan constructor case 1" time="0.001">
+    </testcase>
+    <testcase classname="timespan Hours() case 1" name="timespan Hours() case 1" time="0">
+    </testcase>
+    <testcase classname="timespan Minutes() case 1" name="timespan Minutes() case 1" time="0">
+    </testcase>
+    <testcase classname="timespan Seconds() case 1" name="timespan Seconds() case 1" time="0">
+    </testcase>
+    <testcase classname="timespan Equal() should return true if hours and minutes and seconds are same" name="timespan Equal() should return true if hours and minutes and seconds are same" time="0.001">
+    </testcase>
+    <testcase classname="timespan Equal() should return false if seconds are different" name="timespan Equal() should return false if seconds are different" time="0">
+    </testcase>
+    <testcase classname="timespan Equal() should return false if minutes are different" name="timespan Equal() should return false if minutes are different" time="0">
+    </testcase>
+    <testcase classname="timespan Equal() should return false if hours are different" name="timespan Equal() should return false if hours are different" time="0">
+    </testcase>
+    <testcase classname="timespan TotalMinutes() case 1" name="timespan TotalMinutes() case 1" time="0.001">
+    </testcase>
+    <testcase classname="timespan TotalMinutes() case 2" name="timespan TotalMinutes() case 2" time="0">
+    </testcase>
+    <testcase classname="timespan TotalHours() case 1" name="timespan TotalHours() case 1" time="0">
+    </testcase>
+    <testcase classname="timespan TotalHours() case 2" name="timespan TotalHours() case 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_tinySlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.086" tests="5">
+    <testcase classname="tinySlot constructor should set SlotNumber" name="tinySlot constructor should set SlotNumber" time="0">
+    </testcase>
+    <testcase classname="tinySlot constructor should set Uids" name="tinySlot constructor should set Uids" time="0.001">
+    </testcase>
+    <testcase classname="tinySlot constructor should set PartitionKey" name="tinySlot constructor should set PartitionKey" time="0.001">
+    </testcase>
+    <testcase classname="tinySlot constructor should set DayTimeMatrix 1" name="tinySlot constructor should set DayTimeMatrix 1" time="0">
+    </testcase>
+    <testcase classname="tinySlot constructor should set DayTimeMatrix 2" name="tinySlot constructor should set DayTimeMatrix 2" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\parser\tests\_parseSlotToBigSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.053" tests="1">
+    <testcase classname="ParseSlotToBigSlot case 1" name="ParseSlotToBigSlot case 1" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleIsOpenOfSlotsTable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.099" tests="4">
+    <testcase classname="ToggleIsOpenOfSlotsTable action &apos;s typename should be &apos;open slots table&apos; when passed in true" name="ToggleIsOpenOfSlotsTable action &apos;s typename should be &apos;open slots table&apos; when passed in true" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSlotsTable action &apos;s typename should be &apos;close slots table&apos; when passed in false" name="ToggleIsOpenOfSlotsTable action &apos;s typename should be &apos;close slots table&apos; when passed in false" time="0.001">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSlotsTable action should set IsOpen of SlotTableState property" name="ToggleIsOpenOfSlotsTable action should set IsOpen of SlotTableState property" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSlotsTable action should close the snackbar" name="ToggleIsOpenOfSlotsTable action should close the snackbar" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\model\tests\_rawSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.044" tests="2">
+    <testcase classname="RawSlot every RawSlot should have a unique Uid" name="RawSlot every RawSlot should have a unique Uid" time="0">
+    </testcase>
+    <testcase classname="RawSlot ResetUid is to make sure no rawslots can have the same uid" name="RawSlot ResetUid is to make sure no rawslots can have the same uid" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_goToPrevTimetable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.096" tests="6">
+    <testcase classname="goToNextTimetable action &apos;s name shold be &apos;go to next timetable&apos;" name="goToNextTimetable action &apos;s name shold be &apos;go to next timetable&apos;" time="0">
+    </testcase>
+    <testcase classname="goToNextTimetable action should increment the CurrentIndex and reset the SubCurrentIndex" name="goToNextTimetable action should increment the CurrentIndex and reset the SubCurrentIndex" time="0.002">
+    </testcase>
+    <testcase classname="goToNextTimetable action should increment the current index cyclically" name="goToNextTimetable action should increment the current index cyclically" time="0.002">
+    </testcase>
+    <testcase classname="goToPrevTimetable action &apos;s name shold be &apos;go to previous timetable&apos;" name="goToPrevTimetable action &apos;s name shold be &apos;go to previous timetable&apos;" time="0">
+    </testcase>
+    <testcase classname="goToPrevTimetable action should decrement the CurrentIndex and reset SubCurrentIndex" name="goToPrevTimetable action should decrement the CurrentIndex and reset SubCurrentIndex" time="0.002">
+    </testcase>
+    <testcase classname="goToPrevTimetable action decrement the CurrentIndex cyclically" name="goToPrevTimetable action decrement the CurrentIndex cyclically" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleIsOpenOfSubjectListView.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.074" tests="4">
+    <testcase classname="toggle visiblity of subject list view action &apos;s typeName should be &apos;open subject list view&apos; when passed in true" name="toggle visiblity of subject list view action &apos;s typeName should be &apos;open subject list view&apos; when passed in true" time="0">
+    </testcase>
+    <testcase classname="toggle visiblity of subject list view action &apos;s typeName should be &apos;close subject list view&apos; when passed in false" name="toggle visiblity of subject list view action &apos;s typeName should be &apos;close subject list view&apos; when passed in false" time="0">
+    </testcase>
+    <testcase classname="toggle visiblity of subject list view action should toggle property IsOpen of SubjectListState to true when passed in true" name="toggle visiblity of subject list view action should toggle property IsOpen of SubjectListState to true when passed in true" time="0.001">
+    </testcase>
+    <testcase classname="toggle visiblity of subject list view action should toggle property IsOpen of SubjectListState to false when passed in false" name="toggle visiblity of subject list view action should toggle property IsOpen of SubjectListState to false when passed in false" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\tests\_heng_2017_sept.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.054" tests="1">
+    <testcase classname="heng_2017_sept IndexOf case 1" name="heng_2017_sept IndexOf case 1" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_hideSnackbar.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.079" tests="2">
+    <testcase classname="HideSnackbar action &apos;s typename should be &apos;hide snackbar&apos;" name="HideSnackbar action &apos;s typename should be &apos;hide snackbar&apos;" time="0.001">
+    </testcase>
+    <testcase classname="HideSnackbar action should set SnackbarState.IsOpento false" name="HideSnackbar action should set SnackbarState.IsOpento false" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\util\tests\_getInitials.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.045" tests="8">
+    <testcase classname="GetInitial() should return the initial of every word" name="GetInitial() should return the initial of every word" time="0">
+    </testcase>
+    <testcase classname="GetInitial() should ignore AMPERSAND(&amp;) symbol" name="GetInitial() should ignore AMPERSAND(&amp;) symbol" time="0">
+    </testcase>
+    <testcase classname="GetInitial() should ignore COMMA(,) symbol" name="GetInitial() should ignore COMMA(,) symbol" time="0">
+    </testcase>
+    <testcase classname="GetInitial() should ignore words inside brackets" name="GetInitial() should ignore words inside brackets" time="0">
+    </testcase>
+    <testcase classname="GetInitial() should ignore conjunctive words like &apos;AND&apos;" name="GetInitial() should ignore conjunctive words like &apos;AND&apos;" time="0">
+    </testcase>
+    <testcase classname="GetInitial() should convert roman numeral to arabic numeral - 1" name="GetInitial() should convert roman numeral to arabic numeral - 1" time="0.001">
+    </testcase>
+    <testcase classname="GetInitial() should convert roman numeral to arabic numeral - 2" name="GetInitial() should convert roman numeral to arabic numeral - 2" time="0">
+    </testcase>
+    <testcase classname="GetInitial() should convert roman numeral to arabic numeral - 3" name="GetInitial() should convert roman numeral to arabic numeral - 3" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\att\tests\_day.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.05" tests="7">
+    <testcase classname="day parser test 1" name="day parser test 1" time="0.001">
+    </testcase>
+    <testcase classname="day parser test 2" name="day parser test 2" time="0">
+    </testcase>
+    <testcase classname="day parser test 3" name="day parser test 3" time="0">
+    </testcase>
+    <testcase classname="day parser test 4" name="day parser test 4" time="0.001">
+    </testcase>
+    <testcase classname="day parser test 5" name="day parser test 5" time="0">
+    </testcase>
+    <testcase classname="day parser test 6" name="day parser test 6" time="0">
+    </testcase>
+    <testcase classname="day parser test 7" name="day parser test 7" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\model\tests\_subject.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.066" tests="3">
+    <testcase classname="Subject constructor should set static property subjectCodeAndName" name="Subject constructor should set static property subjectCodeAndName" time="0.001">
+    </testcase>
+    <testcase classname="Subject GetSubjectNameOf should return the subject name of the related subject code" name="Subject GetSubjectNameOf should return the subject name of the related subject code" time="0.004">
+    </testcase>
+    <testcase classname="Subject GetSubjectNameOf should return Beautified subject name" name="Subject GetSubjectNameOf should return Beautified subject name" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_generateIndices.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.053" tests="2">
+    <testcase classname="GenerateIndices case 1" name="GenerateIndices case 1" time="0">
+    </testcase>
+    <testcase classname="GenerateIndices case 2" name="GenerateIndices case 2" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleIsOpenOfAlgorithmVisualizerView.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.08" tests="3">
+    <testcase classname="ToggleIsOpenOfAlgorithmVisualizerView action &apos;s typename should be &apos;toggle is open of algorithm visualizer view&apos;" name="ToggleIsOpenOfAlgorithmVisualizerView action &apos;s typename should be &apos;toggle is open of algorithm visualizer view&apos;" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfAlgorithmVisualizerView action can only open the view if Algorithm Visualizer is enabled" name="ToggleIsOpenOfAlgorithmVisualizerView action can only open the view if Algorithm Visualizer is enabled" time="0.001">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfAlgorithmVisualizerView action should set IsOpen to false if passed in false" name="ToggleIsOpenOfAlgorithmVisualizerView action should set IsOpen to false if passed in false" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleSetTimeConstraintView.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.06" tests="4">
+    <testcase classname="OpenSetTimeConstraintView action &apos;s typename should be &apos;open set time constraint view&apos; if passed in true" name="OpenSetTimeConstraintView action &apos;s typename should be &apos;open set time constraint view&apos; if passed in true" time="0">
+    </testcase>
+    <testcase classname="OpenSetTimeConstraintView action &apos;s typename should be &apos;close set time constraint view&apos; if passed in false" name="OpenSetTimeConstraintView action &apos;s typename should be &apos;close set time constraint view&apos; if passed in false" time="0">
+    </testcase>
+    <testcase classname="OpenSetTimeConstraintView action should set IsOpen property of SetTimeConstraintState to true when passed in true" name="OpenSetTimeConstraintView action should set IsOpen property of SetTimeConstraintState to true when passed in true" time="0.001">
+    </testcase>
+    <testcase classname="OpenSetTimeConstraintView action should set IsOpen property of SetTimeConstraintState to true when passed in false" name="OpenSetTimeConstraintView action should set IsOpen property of SetTimeConstraintState to true when passed in false" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\model\tests\_timetable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.049" tests="2">
+    <testcase classname="CompressDayTimeMatrix case 1" name="CompressDayTimeMatrix case 1" time="0">
+    </testcase>
+    <testcase classname="CompressDayTimeMatrix case 2" name="CompressDayTimeMatrix case 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_state.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.046" tests="6">
+    <testcase classname="GotIntersection() should return true if got intersection" name="GotIntersection() should return true if got intersection" time="0">
+    </testcase>
+    <testcase classname="GotIntersection() should return false if don&apos;t have intersection" name="GotIntersection() should return false if don&apos;t have intersection" time="0">
+    </testcase>
+    <testcase classname="Append() should return number array of length 7" name="Append() should return number array of length 7" time="0.001">
+    </testcase>
+    <testcase classname="Append() should combine two array into one array" name="Append() should combine two array into one array" time="0">
+    </testcase>
+    <testcase classname="Append() should combine two array using bitwise-OR" name="Append() should combine two array using bitwise-OR" time="0">
+    </testcase>
+    <testcase classname="Append() shold return results which have the length of the first input" name="Append() shold return results which have the length of the first input" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\dataStructure\tests\_objectStore.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.063" tests="7">
+    <testcase classname="ObjectStore constructor should take a list of identifiables as argument and build the lookup dictionary" name="ObjectStore constructor should take a list of identifiables as argument and build the lookup dictionary" time="0.001">
+    </testcase>
+    <testcase classname="ObjectStore constructor should throw error if the data contains duplicated Uids" name="ObjectStore constructor should throw error if the data contains duplicated Uids" time="0">
+    </testcase>
+    <testcase classname="ObjectStore GetOne should take a key and return the corresponding data" name="ObjectStore GetOne should take a key and return the corresponding data" time="0">
+    </testcase>
+    <testcase classname="ObjectStore GetOne should return undefined if the key match no data" name="ObjectStore GetOne should return undefined if the key match no data" time="0">
+    </testcase>
+    <testcase classname="ObjectStore GetBunch should take a list of keys and return the matching data" name="ObjectStore GetBunch should take a list of keys and return the matching data" time="0.001">
+    </testcase>
+    <testcase classname="ObjectStore GetBunch should ignore non-matching key" name="ObjectStore GetBunch should ignore non-matching key" time="0">
+    </testcase>
+    <testcase classname="ObjectStore GetAll should return all values of the dict as a list" name="ObjectStore GetAll should return all values of the dict as a list" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\tests\_heng_2017_apr.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.059" tests="1">
+    <testcase classname="heng_2017_apr IndexOf case 1" name="heng_2017_apr IndexOf case 1" time="0.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\model\matrix\tests\_box.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.045" tests="1">
+    <testcase classname="box constructor should set Uid based on X and Day arguments" name="box constructor should set Uid based on X and Day arguments" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\util\tests\_decToBin.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.038" tests="2">
+    <testcase classname="DecToBin() case 1" name="DecToBin() case 1" time="0.001">
+    </testcase>
+    <testcase classname="DecToBin() case 2" name="DecToBin() case 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_increment.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.066" tests="5">
+    <testcase classname="increment case 1" name="increment case 1" time="0">
+    </testcase>
+    <testcase classname="increment case 2" name="increment case 2" time="0.001">
+    </testcase>
+    <testcase classname="increment case 3" name="increment case 3" time="0">
+    </testcase>
+    <testcase classname="increment case 4" name="increment case 4" time="0">
+    </testcase>
+    <testcase classname="increment should return empty array when max value has reached" name="increment should return empty array when max value has reached" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\permutator\tests\_boundedInt.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.047" tests="8">
+    <testcase classname="boundedInt constructor should not throw error" name="boundedInt constructor should not throw error" time="0">
+    </testcase>
+    <testcase classname="boundedInt constructor should allow client to set upperLimit and value" name="boundedInt constructor should allow client to set upperLimit and value" time="0">
+    </testcase>
+    <testcase classname="boundedInt Equal should return true if the target have same upperLimit and value as itself" name="boundedInt Equal should return true if the target have same upperLimit and value as itself" time="0">
+    </testcase>
+    <testcase classname="boundedInt Equal should return false if upperLimit is not same" name="boundedInt Equal should return false if upperLimit is not same" time="0">
+    </testcase>
+    <testcase classname="boundedInt Equal should return false if value is not same" name="boundedInt Equal should return false if value is not same" time="0">
+    </testcase>
+    <testcase classname="boundedInt Duplicate should return a new duplicate which is equal to itself" name="boundedInt Duplicate should return a new duplicate which is equal to itself" time="0.001">
+    </testcase>
+    <testcase classname="boundedInt Duplicate should return a new object" name="boundedInt Duplicate should return a new object" time="0">
+    </testcase>
+    <testcase classname="boundedInt ToString should allow client to know its Upperlimit and Value" name="boundedInt ToString should allow client to know its Upperlimit and Value" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\dataStructure\tests\_dataRouter.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.058" tests="7">
+    <testcase classname="DataRouter GetCurrentData should throw error if route is not set yet" name="DataRouter GetCurrentData should throw error if route is not set yet" time="0.001">
+    </testcase>
+    <testcase classname="DataRouter AddData should add data to its dictionary" name="DataRouter AddData should add data to its dictionary" time="0">
+    </testcase>
+    <testcase classname="DataRouter AddData should throw error if the label passed in already existed" name="DataRouter AddData should throw error if the label passed in already existed" time="0.001">
+    </testcase>
+    <testcase classname="DataRouter SetRouteTo case 1" name="DataRouter SetRouteTo case 1" time="0">
+    </testcase>
+    <testcase classname="DataRouter SetRouteTo should throw error if the route-to-be-set does not exist" name="DataRouter SetRouteTo should throw error if the route-to-be-set does not exist" time="0">
+    </testcase>
+    <testcase classname="DataRouter GetDataFrom should return undefined if the label points to nothing" name="DataRouter GetDataFrom should return undefined if the label points to nothing" time="0">
+    </testcase>
+    <testcase classname="DataRouter GetCurrentRoute should return the current route" name="DataRouter GetCurrentRoute should return the current route" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleIsOpenOfGetDateDialog.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.05" tests="3">
+    <testcase classname="ToggleIsOpenOfGetDateDialog action &apos;s typename should be &apos;open get date dialog&apos; when passed in true" name="ToggleIsOpenOfGetDateDialog action &apos;s typename should be &apos;open get date dialog&apos; when passed in true" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfGetDateDialog action &apos;s typename should be &apos;open get date dialog&apos; when passed in false" name="ToggleIsOpenOfGetDateDialog action &apos;s typename should be &apos;open get date dialog&apos; when passed in false" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfGetDateDialog action should set IsGetDateDialogOpen property" name="ToggleIsOpenOfGetDateDialog action should set IsGetDateDialogOpen property" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleLoadingBar.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.063" tests="3">
+    <testcase classname="ToggleLoadingBar action &apos;s typename should be &apos;toggle loading bar&apos;" name="ToggleLoadingBar action &apos;s typename should be &apos;toggle loading bar&apos;" time="0">
+    </testcase>
+    <testcase classname="ToggleLoadingBar action should set IsShowingLoadingBar property to true if passed in true" name="ToggleLoadingBar action should set IsShowingLoadingBar property to true if passed in true" time="0.001">
+    </testcase>
+    <testcase classname="ToggleLoadingBar action should set IsShowingLoadingBar property to false if passed in false" name="ToggleLoadingBar action should set IsShowingLoadingBar property to false if passed in false" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleIsOpenOfSummary.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.073" tests="5">
+    <testcase classname="ToggleIsOpenOfSummary action &apos;s typename should be &apos;toggle is open of summary&apos;" name="ToggleIsOpenOfSummary action &apos;s typename should be &apos;toggle is open of summary&apos;" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSummary action should set IsSummaryOpen to true if it is intially false" name="ToggleIsOpenOfSummary action should set IsSummaryOpen to true if it is intially false" time="0.001">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSummary action should set IsSummaryOpen to false if it is intially true" name="ToggleIsOpenOfSummary action should set IsSummaryOpen to false if it is intially true" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSummary action should set IsSummaryOpen based on passed in argument (1)" name="ToggleIsOpenOfSummary action should set IsSummaryOpen based on passed in argument (1)" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSummary action should set IsSummaryOpen based on passed in argument (2)" name="ToggleIsOpenOfSummary action should set IsSummaryOpen based on passed in argument (2)" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleIsOpenOfSBCWDialog.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.049" tests="3">
+    <testcase classname="ToggleIsOpenOfSBCWDialog action &apos;s typename should be &apos;turn on SBCWDialog&apos; when passed in true" name="ToggleIsOpenOfSBCWDialog action &apos;s typename should be &apos;turn on SBCWDialog&apos; when passed in true" time="0.001">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSBCWDialog action &apos;s typename should be &apos;turn off SBCWDialog&apos; when passed in false" name="ToggleIsOpenOfSBCWDialog action &apos;s typename should be &apos;turn off SBCWDialog&apos; when passed in false" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSBCWDialog action should set IsOpen of SBCWDialog" name="ToggleIsOpenOfSBCWDialog action should set IsOpen of SBCWDialog" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\att\tests\_type.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.043" tests="1">
+    <testcase classname="ParseType should throw error if passed in stirng other than L/T/P" name="ParseType should throw error if passed in stirng other than L/T/P" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_benchmark.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.035" tests="1">
+    <testcase classname="benchmark case 2" name="benchmark case 2" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\util\tests\_beautifySubjectName.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.044" tests="5">
+    <testcase classname="BeautifySubjectName() should convert AND to &amp;" name="BeautifySubjectName() should convert AND to &amp;" time="0">
+    </testcase>
+    <testcase classname="BeautifySubjectName() should capitalize every word " name="BeautifySubjectName() should capitalize every word " time="0">
+    </testcase>
+    <testcase classname="BeautifySubjectName() should convert DAN to &amp; " name="BeautifySubjectName() should convert DAN to &amp; " time="0.001">
+    </testcase>
+    <testcase classname="BeautifySubjectName() should preserve Roman numerals (case 1)" name="BeautifySubjectName() should preserve Roman numerals (case 1)" time="0">
+    </testcase>
+    <testcase classname="BeautifySubjectName() should preserve Roman numerals (case 2)" name="BeautifySubjectName() should preserve Roman numerals (case 2)" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleIsEnabledOfAlgorithmVisualizer.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.064" tests="4">
+    <testcase classname="ToggleIsOpenOfSummary action &apos;s typename should be &apos;toggle is enabled of algorithm visualizer&apos;" name="ToggleIsOpenOfSummary action &apos;s typename should be &apos;toggle is enabled of algorithm visualizer&apos;" time="0.001">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSummary action should toggle IsEnabled if pass in nothing" name="ToggleIsOpenOfSummary action should toggle IsEnabled if pass in nothing" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSummary action should set IsEnabled to true if passed in true" name="ToggleIsOpenOfSummary action should set IsEnabled to true if passed in true" time="0.001">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSummary action should set IsEnabled to false if passed in false" name="ToggleIsOpenOfSummary action should set IsEnabled to false if passed in false" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_toggleIsOpenOfSaveDialog.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.047" tests="3">
+    <testcase classname="ToggleIsOpenOfSaveDialog action &apos;s typename should be &apos;open save dialog&apos; if passed in true" name="ToggleIsOpenOfSaveDialog action &apos;s typename should be &apos;open save dialog&apos; if passed in true" time="0">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSaveDialog action &apos;s typename should be &apos;close save dialog&apos; if passed in false" name="ToggleIsOpenOfSaveDialog action &apos;s typename should be &apos;close save dialog&apos; if passed in false" time="0.001">
+    </testcase>
+    <testcase classname="ToggleIsOpenOfSaveDialog action should set IsMainDialogOpen property" name="ToggleIsOpenOfSaveDialog action should set IsMainDialogOpen property" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_goToNextTimetable.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:32" time="0.042" tests="3">
+    <testcase classname="goToNextTimetable action &apos;s name shold be &apos;go to next timetable&apos;" name="goToNextTimetable action &apos;s name shold be &apos;go to next timetable&apos;" time="0">
+    </testcase>
+    <testcase classname="goToNextTimetable action should increment the CurrentIndex and reset the SubCurrentIndex" name="goToNextTimetable action should increment the CurrentIndex and reset the SubCurrentIndex" time="0.002">
+    </testcase>
+    <testcase classname="goToNextTimetable action should increment the current index cyclically" name="goToNextTimetable action should increment the current index cyclically" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\parser\tests\_parseFgoHtmlToRawSlot.test.js" errors="0" failures="0" skipped="1" timestamp="2020-09-04T09:32:32" time="0.482" tests="1">
+    <testcase classname="ParseHtmlToRawSlot encountered a declaration exception" name="ParseHtmlToRawSlot encountered a declaration exception" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\react\timetableView\tests\_timetableView.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="8.697" tests="1">
+    <testcase classname="GetStandardDayColumnLayout should return an array of Layouts" name="GetStandardDayColumnLayout should return an array of Layouts" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_findAlternativeSlotsOfCurrentSlots.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="9.41" tests="1">
+    <testcase classname="find alternative slots of current slot should not show alternative slots if not all sibling slots are shown" name="find alternative slots of current slot should not show alternative slots if not all sibling slots are shown" time="0.865">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_goToThisAlternativeSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="10.497" tests="3">
+    <testcase classname="showAlternateSlot action should set alternate slots based on clicked slot" name="showAlternateSlot action should set alternate slots based on clicked slot" time="0.048">
+    </testcase>
+    <testcase classname="showAlternateSlot action case 2" name="showAlternateSlot action case 2" time="0.987">
+    </testcase>
+    <testcase classname="showAlternateSlot action case 3" name="showAlternateSlot action case 3" time="0.873">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\core\redux\tests\_showAlternateSlot.test.js" errors="0" failures="0" skipped="0" timestamp="2020-09-04T09:32:25" time="10.866" tests="2">
+    <testcase classname="showAlternateSlot action should set alternate slots based on clicked slot" name="showAlternateSlot action should set alternate slots based on clicked slot" time="2.165">
+    </testcase>
+    <testcase classname="showAlternateSlot action should not show alternate slots that is filtered out by set time constraint" name="showAlternateSlot action should not show alternate slots that is filtered out by set time constraint" time="0.032">
+    </testcase>
+  </testsuite>
+</testsuites>
