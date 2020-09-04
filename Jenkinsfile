@@ -9,13 +9,13 @@ pipeline {
 
         stage('build') {
             steps {
-                echo "npm install"
-                echo "./scripts/watch"
+                "npm install"
+                "./scripts/watch"
             }
         }
         stage('test') {
             steps {
-                echo "CI=true npm test"
+                "CI=true npm test"
             }
         }
         
