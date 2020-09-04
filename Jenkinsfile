@@ -7,7 +7,7 @@ pipeline{
             stage('build') {
                 steps {
                     bat 'npm install'
-                    bat 'cd /scripts'
+                    bat 'cd \TTAP-Multibranch_master\scripts'
                     bat 'watch'
                 }
             }
