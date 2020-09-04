@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:6-alpine' 
+            args '-p 3000:3000' 
+        }
+    }
     stages {
         stage('cloneRepo') {
             steps {
@@ -9,13 +14,13 @@ pipeline {
 
         stage('build') {
             steps {
-                "npm install"
-                "./scripts/watch"
+                echo "npm install"
+                echo "./scripts/watch"
             }
         }
         stage('test') {
             steps {
-                "CI=true npm test"
+                echo "CI=true npm test"
             }
         }
         
